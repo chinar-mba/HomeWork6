@@ -10,9 +10,13 @@
 		6653621A29FFBB7400168550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6653621929FFBB7400168550 /* AppDelegate.swift */; };
 		6653621C29FFBB7400168550 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6653621B29FFBB7400168550 /* SceneDelegate.swift */; };
 		6653621E29FFBB7400168550 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6653621D29FFBB7400168550 /* ViewController.swift */; };
-		6653622129FFBB7400168550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6653621F29FFBB7400168550 /* Main.storyboard */; };
 		6653622329FFBB7600168550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6653622229FFBB7600168550 /* Assets.xcassets */; };
 		6653622629FFBB7600168550 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6653622429FFBB7600168550 /* LaunchScreen.storyboard */; };
+		6653622F29FFBBC200168550 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6653622E29FFBBC200168550 /* SnapKit */; };
+		6653623129FFD36000168550 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6653623029FFD36000168550 /* RegisterViewController.swift */; };
+		6653623529FFD38D00168550 /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6653623429FFD38D00168550 /* ForgotViewController.swift */; };
+		6653623829FFE0E000168550 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6653623729FFE0E000168550 /* IQKeyboardManagerSwift */; };
+		6653623B29FFE1C500168550 /* texfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6653623A29FFE1C500168550 /* texfield.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +24,12 @@
 		6653621929FFBB7400168550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6653621B29FFBB7400168550 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6653621D29FFBB7400168550 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6653622029FFBB7400168550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6653622229FFBB7600168550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6653622529FFBB7600168550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6653622729FFBB7600168550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6653623029FFD36000168550 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		6653623429FFD38D00168550 /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
+		6653623A29FFE1C500168550 /* texfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = texfield.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6653622F29FFBBC200168550 /* SnapKit in Frameworks */,
+				6653623829FFE0E000168550 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +64,33 @@
 		6653621829FFBB7400168550 /* HomeWork6 */ = {
 			isa = PBXGroup;
 			children = (
+				6653623929FFE18600168550 /* extention */,
+				6653623229FFD36500168550 /* Controller */,
 				6653621929FFBB7400168550 /* AppDelegate.swift */,
 				6653621B29FFBB7400168550 /* SceneDelegate.swift */,
-				6653621D29FFBB7400168550 /* ViewController.swift */,
-				6653621F29FFBB7400168550 /* Main.storyboard */,
 				6653622229FFBB7600168550 /* Assets.xcassets */,
 				6653622429FFBB7600168550 /* LaunchScreen.storyboard */,
 				6653622729FFBB7600168550 /* Info.plist */,
 			);
 			path = HomeWork6;
+			sourceTree = "<group>";
+		};
+		6653623229FFD36500168550 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6653621D29FFBB7400168550 /* ViewController.swift */,
+				6653623029FFD36000168550 /* RegisterViewController.swift */,
+				6653623429FFD38D00168550 /* ForgotViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6653623929FFE18600168550 /* extention */ = {
+			isa = PBXGroup;
+			children = (
+				6653623A29FFE1C500168550 /* texfield.swift */,
+			);
+			path = extention;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +109,10 @@
 			dependencies = (
 			);
 			name = HomeWork6;
+			packageProductDependencies = (
+				6653622E29FFBBC200168550 /* SnapKit */,
+				6653623729FFE0E000168550 /* IQKeyboardManagerSwift */,
+			);
 			productName = HomeWork6;
 			productReference = 6653621629FFBB7400168550 /* HomeWork6.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +141,10 @@
 				Base,
 			);
 			mainGroup = 6653620D29FFBB7400168550;
+			packageReferences = (
+				6653622D29FFBBC200168550 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				6653623629FFE0E000168550 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 6653621729FFBB7400168550 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +161,6 @@
 			files = (
 				6653622629FFBB7600168550 /* LaunchScreen.storyboard in Resources */,
 				6653622329FFBB7600168550 /* Assets.xcassets in Resources */,
-				6653622129FFBB7400168550 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6653623129FFD36000168550 /* RegisterViewController.swift in Sources */,
 				6653621E29FFBB7400168550 /* ViewController.swift in Sources */,
 				6653621A29FFBB7400168550 /* AppDelegate.swift in Sources */,
+				6653623529FFD38D00168550 /* ForgotViewController.swift in Sources */,
+				6653623B29FFE1C500168550 /* texfield.swift in Sources */,
 				6653621C29FFBB7400168550 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +183,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6653621F29FFBB7400168550 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6653622029FFBB7400168550 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6653622429FFBB7600168550 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +319,6 @@
 				INFOPLIST_FILE = HomeWork6/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +345,6 @@
 				INFOPLIST_FILE = HomeWork6/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +382,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6653622D29FFBBC200168550 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		6653623629FFE0E000168550 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6653622E29FFBBC200168550 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6653622D29FFBBC200168550 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		6653623729FFE0E000168550 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6653623629FFE0E000168550 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6653620E29FFBB7400168550 /* Project object */;
 }
